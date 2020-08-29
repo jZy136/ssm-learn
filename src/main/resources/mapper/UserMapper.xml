@@ -4,19 +4,19 @@
        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
 
 <mapper namespace="com.morea.dao.UserDao">
-<insert id="insertUser" parameterType="User">
+<insert id="insertUser" parameterType="com.morea.model.User">
 
 </insert>
 <delete id="deleteUserById" parameterType="int">
 
 </delete>
-<update id="updateUser" parameterType="User">
+<update id="updateUser" parameterType="com.morea.model.User">
 
 </update>
-<select id="queryAllUser" resultType="User">
+<select id="queryAllUser" resultType="com.morea.model.User">
     select * from user
 </select>
-<select id="queryUserByID" parameterType="int" resultType="User">
+<select id="queryUserByID" parameterType="int" resultType="com.morea.model.User">
 
 </select>
 </mapper>
